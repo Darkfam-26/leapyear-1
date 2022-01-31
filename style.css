@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    color: white;
+    background-color: black;
+}
+.container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.btn{
+    background-color: crimson;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 1.3rem;
+} 
+
+h1{
+    font-family: 'Satisfy', cursive;
+}
+.show{
+    letter-spacing: 1px;
+}
