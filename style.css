@@ -9,6 +9,9 @@ body{
     color: white;
     background-color: black;
 }
+#red{
+    /* display:none; */
+}
 .container{
     text-align: center;
     display: flex;

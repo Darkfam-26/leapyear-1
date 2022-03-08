@@ -1,12 +1,31 @@
+//warning massage
+const showWarning =id => {
+    const tRed = document.getElementById('red');
+    tRed.style.display = id
+}
+
 function isLeapYear() {
-    const yearCount = parseInt(document.getElementById('year').value);
+    const year = document.getElementById('year')
+    const yearCount = parseInt(year.value);
     const leap = document.getElementById('show');
+
+    // error handle of empty input
+    if (isNaN(yearCount)) {
+       showWarning("block")
+        return;        
+    }
+    // main code
+    showWarning('none')
+    leap.textContent = ""
     if (((yearCount % 4 == 0) && (yearCount % 100 != 0)) || (yearCount % 400 == 0))
     {
     leap.textContent += "Yup this is a leap year"
     }
     else if (yearCount == 143){
      leap.textContent += "I love you (^_^)"  
+    }
+    else if (yearCount == 914){
+     leap.textContent += "you are damn cute (+_+)"  
     }
     else if (yearCount == 359){
      leap.textContent += "Always remember i am with you ❤💝"  
@@ -17,7 +36,11 @@ function isLeapYear() {
 }
 
 function refreash (){
-    window.location.reload();
+    const year = document.getElementById('year')
+    const leap = document.getElementById('show');
+
+    year.value = ""
+    leap.textContent = ""
 }
 
    
