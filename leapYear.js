@@ -1,9 +1,9 @@
 //warning massage
-const showWarning =id => {
+function showWarning (id) {
     const tRed = document.getElementById('red');
-    tRed.style.display = id
+     tRed.style.display = id
 }
-
+showWarning('none')
 function isLeapYear() {
     const year = document.getElementById('year')
     const yearCount = parseInt(year.value);
@@ -15,7 +15,8 @@ function isLeapYear() {
         return;        
     }
     // main code
-    showWarning('none')
+    showWarning("none")
+
     leap.textContent = ""
     if (((yearCount % 4 == 0) && (yearCount % 100 != 0)) || (yearCount % 400 == 0))
     {
